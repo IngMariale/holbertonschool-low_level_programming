@@ -9,36 +9,42 @@
 
 int main(void)
 {
-int n = 0, temp = 0;
+int n = 0, nega = 0;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 printf("Last digit of %d is", n);
-temp = n;
 
-if (temp < 0)
+if (n < 0)
 {
-temp = temp * -1;
+nega = n * -1;
+}
+else
+nega = n;
+
+while (nega > 9)
+{
+nega = nega % 10;
 }
 
-while (temp > 9)
+if (n < 0)
 {
-temp = temp % 10;
+nega = nega * -1;
 }
 
-if (temp > 5)
+if (nega > 5)
 {
-printf(" %d and is greater than 5\n", temp);
+printf(" %d and is greater than 5\n", nega);
 }
 
-if (temp == 0)
+if (nega == 0)
 {
-printf(" %d and is 0\n", temp);
+printf(" %d and is 0\n", nega);
 }
 
-if (temp < 6)
+if (nega < 6 && nega != 0)
 {
-printf(" %d and is less than 6 and not 0\n", temp);
+printf(" %d and is less than 6 and not 0\n", nega);
 }
 
 return (0);
