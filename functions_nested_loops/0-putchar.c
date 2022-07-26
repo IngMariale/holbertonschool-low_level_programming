@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
-* print_putchar - print putchar
+* main - print putchar
 * Return: 0
 */
 
-int print_putchar(void)
+int main(void)
 {
 int i = 0;
 char content[] = "_putchar";
