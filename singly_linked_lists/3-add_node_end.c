@@ -15,9 +15,16 @@ list_t *add_node_end(list_t **head, const char *str)
 int i = 0;
 list_t *ptr, *temp;
 ptr = *head;
+ptr = malloc(sizeof(list_t));
 temp = malloc(sizeof(list_t));
 
-if (temp == NULL || ptr == NULL)
+if(ptr == NULL)
+{
+free(ptr);
+return (NULL);
+}
+
+if (temp == NULL)
 {
 return (NULL);
 }
