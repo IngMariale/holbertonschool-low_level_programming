@@ -24,11 +24,6 @@ free(ptr);
 return (NULL);
 }
 
-if (temp == NULL)
-{
-return (NULL);
-}
-
 for (; str[i]; i++)
 ;
 
