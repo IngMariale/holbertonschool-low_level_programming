@@ -41,5 +41,5 @@ ptr = ptr->next;
 
 ptr->next = temp;
 
-return (*head);
+return (temp);
 }
