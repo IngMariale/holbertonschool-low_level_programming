@@ -34,13 +34,12 @@ if (temp->str == NULL)
 free(temp);
 }
 
-temp->len = i + 1;
+temp->len = i;
 
 while (ptr->next != NULL)
 {
 ptr = ptr->next;
 }
-
 ptr->next = temp;
 
 return (temp);
