@@ -20,6 +20,6 @@ f = (*head)->next;
 free(*head);
 *head = f;
 }
-  
+
 *head = NULL;
 }
