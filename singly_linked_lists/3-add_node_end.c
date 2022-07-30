@@ -17,7 +17,7 @@ list_t *ptr, *end;
 end = *head;
 ptr = malloc(sizeof(list_t));
 
-if(ptr == NULL)
+if (ptr == NULL)
 {
 return (NULL);
 }
