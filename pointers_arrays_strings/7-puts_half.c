@@ -1,4 +1,5 @@
 #include "main.h"
+/*#include <stdio.h>*/
 
 /**
 * puts_half - prints half of a string, followed by a new line
@@ -28,12 +29,13 @@ else
 
 len2 = (len - 1) / 2;
 
-for (i = (len - len2 - 1); i < len; i++)
+for (i = (len - len2); i < len; i++)
 {
 _putchar(str[i]);
 } /*end for*/
 
 } /*end else*/
 _putchar('\n');
-
+/*printf("%d ", len);*/
+/*printf("%d ", len2);*/
 } /*end put_half*/
