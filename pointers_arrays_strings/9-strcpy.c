@@ -16,7 +16,7 @@ while (src[len])
 len++;
 }
 
-for (; i < len; i++)
+for (; i <= len; i++)
 {
 dest[i] = src[i];
 }
