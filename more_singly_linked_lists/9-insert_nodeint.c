@@ -25,8 +25,15 @@ new_node->next = NULL; /*assigned the address NULL to new_node*/
 while (i < (idx - 1))
 {
 temp = temp->next; /*move temp to the next position*/
+
+if(temp == NULL)
+{
+return(NULL);
+} /*END IF*/
+
 i++;
 } /*end while*/
+
 
 new_node->next = temp->next;
 temp->next = new_node;
