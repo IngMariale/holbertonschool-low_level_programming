@@ -22,7 +22,7 @@ return (NULL);
 new_node->n = n; /*data of the node provided assigned to new_node*/
 new_node->next = NULL; /*assigned the address NULL to new_node*/
 
-if(idx == 0)
+if (idx == 0)
 {
 new_node->next = *head;
 *head = new_node;
@@ -33,9 +33,9 @@ while (i < (idx - 1))
 {
 temp = temp->next; /*move temp to the next position*/
 
-if(temp == NULL)
+if (temp == NULL)
 {
-return(NULL);
+return (NULL);
 } /*END IF*/
 
 i++;
@@ -43,7 +43,7 @@ i++;
 
 new_node->next = temp->next;
 temp->next = new_node;
-   
+
 return (new_node);
 
 } /*end insert_nodeint_at_index*/
