@@ -21,7 +21,7 @@ return (NULL);
 new_node->n = n;
 new_node->next = NULL;
 
-idx--;
+/*idx--;*/
 while (idx != 1)
 {
 temp = temp->next;
