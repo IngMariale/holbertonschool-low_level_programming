@@ -30,6 +30,6 @@ idx--;
 
 new_node->next = temp->next;
 temp->next = new_node;
-return (new_node->next);
+return (new_node);
 
 } /*end insert_nodeint_at_index*/
