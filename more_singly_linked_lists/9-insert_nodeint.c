@@ -29,5 +29,5 @@ idx--;
 }
 new_node->next = temp->next;
 temp->next = new_node;
-return (temp);
+return (new_node->next);
 }
