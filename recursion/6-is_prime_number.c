@@ -1,34 +1,6 @@
 #include "main.h"
 
 /**
-* is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
-* @n: number to check
-* Return: 1 if prime, 0 if not
-*/
-
-int is_prime_number(int n)
-{
-int x = 1, p;
-
-if (n < 0)
-{
-return (0);
-}
-
-p = check_prime(n, x);
-
-if (p == 2)
-{
-return (1);
-}
-else
-{
-return (0);
-}
-
-}
-
-/**
 * check_prime - check if the number is prime
 * @num: the number to check if it is prime
 * @i: the iterator to verified with
@@ -54,6 +26,34 @@ else
 return (0 + check_prime(num, i + 1));     
 }
 
+}
+
+}
+
+/**
+* is_prime_number - returns 1 if the input integer is a prime number, otherwise return 0
+* @n: number to check
+* Return: 1 if prime, 0 if not
+*/
+
+int is_prime_number(int n)
+{
+int x = 1, p;
+
+if (n < 0)
+{
+return (0);
+}
+
+p = check_prime(n, x);
+
+if (p == 2)
+{
+return (1);
+}
+else
+{
+return (0);
 }
 
 }
