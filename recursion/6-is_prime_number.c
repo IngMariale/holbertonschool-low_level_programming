@@ -8,7 +8,24 @@
 
 int is_prime_number(int n)
 {
-  return (check_prime(n, 1)); 
+int x = 1, p;
+
+if (n < 0)
+{
+return (0);
+}
+
+p = check_prime(n, x);
+
+if (p == 2)
+{
+return (1);
+}
+else
+{
+return (0);
+}
+
 }
 
 /**
@@ -20,16 +37,23 @@ int is_prime_number(int n)
 
 int check_prime(int num, int i) 
 {
-  if (num == i)
-    {
-      return (0); 
-    }
-  else if (num % i == 0)
-    {
-      return (1); 
-    }
-  else
-    {
-      return (check_prime(num, i + 1));     
-    }
+
+if (i == num)
+{
+return (1);
+}
+else
+{
+
+if (num % i == 0)
+{
+return (1 + check_prime(num, i + 1));
+}
+else
+{
+return (0 + check_prime(num, i + 1));     
+}
+
+}
+
 }
