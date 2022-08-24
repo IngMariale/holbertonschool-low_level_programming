@@ -19,10 +19,22 @@
 
 int main(int argc, char *argv[])
 {
-int i = 1, add = 0, temp = 0;
+int i = 1, j = 0, add = 0, temp = 0;
+char *temp_argv;
 
 for (; i < argc; i++)
 {
+temp_argv = argv[i];
+
+for (; temp_argv[j]; j++)
+{
+if (temp_argv[j] < 48 || temp_argv[j] > 57)
+{
+printf("Error\n");
+return (1);
+}
+}
+
 temp = strtol(argv[i], argv, 10);
 
 if (temp > 0)
