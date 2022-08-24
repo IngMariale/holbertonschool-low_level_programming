@@ -17,7 +17,7 @@
 
 char *_strdup(char *str)
 {
-int i = 0;
+int i = 0, j = 0;
 char *cp_str;
 
 if (str == NULL)
@@ -29,14 +29,17 @@ for (; str[i]; i++)
 {
 }
 
-cp_str = (char *)malloc(sizeof(char) * (i - 1));
+cp_str = malloc(sizeof(char) * (i + 1));
 
 if (cp_str == NULL)
 {
 return (NULL);
 }
 
-cp_str = str;
+for (; j < i; j++)
+{
+cp_str[j] = str[j];
+}
 
 return (cp_str);
 }
