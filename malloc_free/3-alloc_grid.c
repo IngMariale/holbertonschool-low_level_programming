@@ -21,6 +21,7 @@ array = malloc(sizeof(int *) * width);
 
 if (array == NULL || width <= 0 || height <= 0)
 {
+free(array);
 return (NULL);
 }
 
@@ -30,6 +31,8 @@ array[i] = malloc(sizeof(int) * height);
 
 if (array[i] == NULL)
 {
+free(array[i]);
+free(array);
 return (NULL);
 }
 
