@@ -42,7 +42,7 @@ for (; j < width; j++)
 {
 for (k = 0; k < height; k++)
 {
-array[k][j] = 0;
+array[j][k] = 0;
 }
 }
 
