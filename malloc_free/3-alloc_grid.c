@@ -48,10 +48,10 @@ return (NULL);
 
 } /*end for*/
 
-for (; j < width; j++)
+for (; j < height; j++)
 {
 
-for (k = 0; k < height; k++)
+for (k = 0; k < width; k++)
 {
 array[j][k] = 0;
 }
