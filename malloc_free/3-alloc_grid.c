@@ -21,8 +21,8 @@ if (width <= 0 || height <=0)
 {
 return(NULL);
 }
- 
-array = malloc(sizeof(int *) * width);
+
+array = (int **)malloc(sizeof(int *) * width);
 
 if (array == NULL)
 {
@@ -31,7 +31,7 @@ return (NULL);
 
 for (; i < width; i++)
 {
-array[i] = malloc(sizeof(int) * height);
+array[i] = (int *)malloc(sizeof(int) * height);
 
 if (array[i] == NULL)
 {
@@ -44,12 +44,13 @@ free(array[l]);
 free(array);
 return (NULL);
 
-}
+} /*end if*/
 
-}
+} /*end for*/
 
 for (; j < width; j++)
 {
+
 for (k = 0; k < height; k++)
 {
 array[j][k] = 0;
