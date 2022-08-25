@@ -20,11 +20,6 @@ char *str_concat(char *s1, char *s2)
 int i = 0, j = 0, k = 0, l = 0;
 char *concat_str;
 
-if (s1 == NULL && s2 == NULL)
-{
-return (NULL);
-}
-
 for (; s1[i]; i++)
 {
 }
