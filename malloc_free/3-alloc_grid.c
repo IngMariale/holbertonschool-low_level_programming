@@ -39,7 +39,7 @@ for (; j < width; j++)
 {
 for (k = 0; k < height; k++)
 {
-array[j][k] = 0;
+array[k][j] = 0;
 }
 }
 
