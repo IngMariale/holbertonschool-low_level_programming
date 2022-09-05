@@ -9,14 +9,9 @@
 * Return: index werebe store in the array of the hash table
 */
 
-unsigned long int key_index(const unsigned char *key, unsigned long int size)
+unsigned long int key_index(const unsigned char *key, __attribute__((unused)) unsigned long int size)
 {
 unsigned long int index = hash_djb2(key);
-
-if (index > size || index < 1)
-{
-return (key_index(key, size));
-}
 
 return (index);
 }
